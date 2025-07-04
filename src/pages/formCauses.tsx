@@ -52,7 +52,7 @@ const SocialCausePage = () => {
             </p>
           </div>
 
-          <form className="bg-primary/25 p-8 rounded-[2.5rem] shadow-2xl">
+          <form className="bg-accent/20 p-8 rounded-[2.5rem] shadow-2xl">
             {/* Cause Title */}
             <div className="mb-6">
               <label htmlFor="causeTitle" className="block text-accent font-semibold mb-2 flex items-center">

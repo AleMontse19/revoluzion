@@ -16,10 +16,28 @@ const config: Config = {
         'danger': '#643d40',        // Red
         'section': '#052134'
       },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '100% 50%' },
+        },
+        pulseBg: {
+          '0%, 100%': { backgroundColor: 'rgba(2, 68, 100, 0.9)' },
+          '50%': { backgroundColor: 'rgba(2, 68, 100, 0.7)' },
+        },
+      },
+      animation: {
+        shimmer: 'shimmer 8s linear infinite',
+        pulseBg: 'pulseBg 4s ease-in-out infinite',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "dot-pattern": "radial-gradient(#E5E7EB 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        "dot-pattern-size": "20px 20px",
       },
     },
   },
